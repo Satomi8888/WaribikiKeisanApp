@@ -12,16 +12,84 @@ class PercentViewController: UIViewController {
     
     //金額を受け取るためのプロパティ
     var price:Int = 0
-    //割引％ニュイ力フィールド
+    //割引％入力フィールド
     
     @IBOutlet weak var persentField: UITextField!
     
+    
+    @IBAction func tap0Button(_ sender: Any) {
+        let value:String = persentField.text! + "0"
+        if let persent = Int(value){
+            persentField.text = "\(persent)"
+        }
+    }
     
     @IBAction func tap1Button(_ sender: Any) {
         let value:String = persentField.text! + "1"
         if let percent = Int(value){
             persentField.text = "\(percent)"
         }
+    }
+
+    @IBAction func tap2Button(_ sender: Any) {
+        let value:String = persentField.text! + "2"
+        if let persent = Int(value){
+            persentField.text = "\(persent)"
+        }
+
+    }
+ 
+    @IBAction func tap3Button(_ sender: Any) {
+        let value:String = persentField.text! + "3"
+        if let persent = Int(value){
+            persentField.text = "\(persent)"
+        }
+    }
+ 
+    @IBAction func tap4Button(_ sender: Any) {
+        let value:String = persentField.text! + "4"
+        if let persent = Int(value){
+            persentField.text = "\(persent)"
+        }
+    }
+    
+    @IBAction func tap5Button(_ sender: Any) {
+        let value:String = persentField.text! + "5"
+        if let persent = Int(value){
+            persentField.text = "\(persent)"
+        }
+    }
+    
+    @IBAction func tap6Button(_ sender: Any) {
+        let value:String = persentField.text! + "6"
+        if let persent = Int(value){
+            persentField.text = "\(persent)"
+        }
+    }
+    
+    @IBAction func tap7Button(_ sender: Any) {
+        let value:String = persentField.text! + "7"
+        if let persent = Int(value){
+            persentField.text = "\(persent)"
+        }
+    }
+
+    @IBAction func tap8Button(_ sender: Any) {
+        let value:String = persentField.text! + "8"
+        if let persent = Int(value){
+            persentField.text = "\(persent)"
+        }
+    }
+    
+    @IBAction func tap9Button(_ sender: Any) {
+        let value:String = persentField.text! + "9"
+        if let persent = Int(value){
+            persentField.text = "\(persent)"
+        }
+    }
+    
+    @IBAction func tapClearButton(_ sender: Any) {
+            persentField.text = "0"
     }
     
     override func viewDidLoad() {

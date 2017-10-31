@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB143FDA1FA8258B0047F56F /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB143FD91FA8258B0047F56F /* ResultViewController.swift */; };
 		AB3136C31F90C31100645567 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3136C21F90C31100645567 /* AppDelegate.swift */; };
 		AB3136C51F90C31100645567 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3136C41F90C31100645567 /* ViewController.swift */; };
 		AB3136C81F90C31100645567 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB3136C61F90C31100645567 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB143FD91FA8258B0047F56F /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		AB3136BF1F90C31100645567 /* myCalc2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myCalc2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB3136C21F90C31100645567 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB3136C41F90C31100645567 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				AB3136C21F90C31100645567 /* AppDelegate.swift */,
 				AB3136C41F90C31100645567 /* ViewController.swift */,
+				AB143FD91FA8258B0047F56F /* ResultViewController.swift */,
 				ABDC74A21F98584200F31DCE /* PercentViewController.swift */,
 				AB3136C61F90C31100645567 /* Main.storyboard */,
 				AB3136C91F90C31100645567 /* Assets.xcassets */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB143FDA1FA8258B0047F56F /* ResultViewController.swift in Sources */,
 				AB3136C51F90C31100645567 /* ViewController.swift in Sources */,
 				AB3136C31F90C31100645567 /* AppDelegate.swift in Sources */,
 				ABDC74A31F98584200F31DCE /* PercentViewController.swift in Sources */,
