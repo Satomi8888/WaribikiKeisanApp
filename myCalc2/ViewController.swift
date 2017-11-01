@@ -9,8 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var priceField: UITextField!
+    @IBAction func restart(_ segue: UIStoryboardSegue){
+        //金額フィールドの値を0にする
+        priceField.text = "0"
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //次の画面をとりだす
+        let viewController = segue.destination as! PercentViewController
+        //金額フィールドの文字列を数値に変換する
+        if let price = Int(priceField.text!){
+            viewController.price = price
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,15 +35,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
-
-    @IBAction func tap0Button(_ sender: Any) {
-        let value = priceField.text! + "0"
+//    var tapNumber:String = "0"
+    
+    func tapButton(tapNumber:String) {
+        let value = priceField.text! + tapNumber
         if let price = Int(value){
             priceField.text = "\(price)"
         }
     }
-    
+
+    @IBAction func tap0Button(_ sender: Any) {
+        tapButton(tapNumber: "0")
+        }
+
     @IBAction func tap00Button(_ sender: Any) {
         let value = priceField.text! + "00"
         if let price = Int(value){

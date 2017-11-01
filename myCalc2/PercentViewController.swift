@@ -12,6 +12,17 @@ class PercentViewController: UIViewController {
     
     //金額を受け取るためのプロパティ
     var price:Int = 0
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //次の画面をとりだす
+        let percentViewController = segue.destination as! ResultViewController
+        //金額フィールドの文字列を数値に変換する
+        if let percent = Int(persentField.text!){
+            percentViewController.percent = percent
+        }
+        percentViewController.price = price
+    }
+    
     //割引％入力フィールド
     
     @IBOutlet weak var persentField: UITextField!
