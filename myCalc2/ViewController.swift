@@ -46,77 +46,46 @@ class ViewController: UIViewController {
 
     @IBAction func tap0Button(_ sender: Any) {
         tapButton(tapNumber: "0")
-        }
+    }
 
     @IBAction func tap00Button(_ sender: Any) {
-        let value = priceField.text! + "00"
-        if let price = Int(value){
-            priceField.text = "\(price)"
-        }
+        tapButton(tapNumber: "00")
     }
     
     @IBAction func tapActionButton(_ sender: Any) {
-        let value = priceField.text! + "1"
-        //print(Int(value))
-        if let price = Int(value){
-            priceField.text = "\(price)"
-        }
+        tapButton(tapNumber: "1")
     }
     
     @IBAction func tap2Button(_ sender: Any) {
-        let value = priceField.text! + "2"
-        if let price = Int(value){
-            priceField.text = "\(price)"
-        }
+        tapButton(tapNumber: "2")
     }
 
     @IBAction func tap3Button(_ sender: Any) {
-        let value = priceField.text! + "3"
-        if let price = Int(value){
-            priceField.text = "\(price)"
-        }
+        tapButton(tapNumber: "3")
     }
     
     @IBAction func tap4Button(_ sender: Any) {
-        let value = priceField.text! + "4"
-        if let price = Int(value){
-            priceField.text = "\(price)"
-        }
+        tapButton(tapNumber: "4")
     }
     
     @IBAction func tap5Button(_ sender: Any) {
-        let value = priceField.text! + "5"
-        if let price = Int(value){
-            priceField.text = "\(price)"
-        }
+        tapButton(tapNumber: "5")
     }
     
     @IBAction func tap6Button(_ sender: Any) {
-        let value = priceField.text! + "6"
-        if let price = Int(value){
-            priceField.text = "\(price)"
-        }
+        tapButton(tapNumber: "6")
     }
     
     @IBAction func tap7Button(_ sender: Any) {
-        let value = priceField.text! + "7"
-        if let price = Int(value){
-            priceField.text = "\(price)"
-        }
+        tapButton(tapNumber: "7")
     }
     
     @IBAction func tap8Button(_ sender: Any) {
-        let value = priceField.text! + "8"
-        if let price = Int(value){
-            priceField.text = "\(price)"
-        }
+        tapButton(tapNumber: "8")
     }
  
     @IBAction func tap9Button(_ sender: Any) {
-        let value = priceField.text! + "9"
-        if let price = Int(value){
-            priceField.text = "\(price)"
-        }
+        tapButton(tapNumber: "9")
     }
     
     @IBAction func tapClearButton(_ sender: Any) {

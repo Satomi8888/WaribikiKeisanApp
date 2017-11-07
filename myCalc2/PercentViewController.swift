@@ -27,76 +27,51 @@ class PercentViewController: UIViewController {
     
     @IBOutlet weak var persentField: UITextField!
     
+    func tapButton(tapNumber:String) {
+        let value = persentField.text! + tapNumber
+        if let price = Int(value){
+            persentField.text = "\(price)"
+        }
+    }
     
     @IBAction func tap0Button(_ sender: Any) {
-        let value:String = persentField.text! + "0"
-        if let persent = Int(value){
-            persentField.text = "\(persent)"
-        }
+        tapButton(tapNumber: "0")
     }
     
     @IBAction func tap1Button(_ sender: Any) {
-        let value:String = persentField.text! + "1"
-        if let percent = Int(value){
-            persentField.text = "\(percent)"
-        }
+        tapButton(tapNumber: "1")
     }
 
     @IBAction func tap2Button(_ sender: Any) {
-        let value:String = persentField.text! + "2"
-        if let persent = Int(value){
-            persentField.text = "\(persent)"
-        }
-
+        tapButton(tapNumber: "2")
     }
  
     @IBAction func tap3Button(_ sender: Any) {
-        let value:String = persentField.text! + "3"
-        if let persent = Int(value){
-            persentField.text = "\(persent)"
-        }
+        tapButton(tapNumber: "3")
     }
  
     @IBAction func tap4Button(_ sender: Any) {
-        let value:String = persentField.text! + "4"
-        if let persent = Int(value){
-            persentField.text = "\(persent)"
-        }
+        tapButton(tapNumber: "4")
     }
     
     @IBAction func tap5Button(_ sender: Any) {
-        let value:String = persentField.text! + "5"
-        if let persent = Int(value){
-            persentField.text = "\(persent)"
-        }
+        tapButton(tapNumber: "5")
     }
     
     @IBAction func tap6Button(_ sender: Any) {
-        let value:String = persentField.text! + "6"
-        if let persent = Int(value){
-            persentField.text = "\(persent)"
-        }
+        tapButton(tapNumber: "6")
     }
     
     @IBAction func tap7Button(_ sender: Any) {
-        let value:String = persentField.text! + "7"
-        if let persent = Int(value){
-            persentField.text = "\(persent)"
-        }
+        tapButton(tapNumber: "7")
     }
 
     @IBAction func tap8Button(_ sender: Any) {
-        let value:String = persentField.text! + "8"
-        if let persent = Int(value){
-            persentField.text = "\(persent)"
-        }
+        tapButton(tapNumber: "8")
     }
     
     @IBAction func tap9Button(_ sender: Any) {
-        let value:String = persentField.text! + "9"
-        if let persent = Int(value){
-            persentField.text = "\(persent)"
-        }
+        tapButton(tapNumber: "9")
     }
     
     @IBAction func tapClearButton(_ sender: Any) {
