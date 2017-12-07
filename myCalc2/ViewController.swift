@@ -14,6 +14,13 @@ class ViewController: UIViewController {
     @IBAction func restart(_ segue: UIStoryboardSegue){
         //金額フィールドの値を0にする
         priceField.text = "0"
+        //UserDefaultsの参照
+        let userDefaults = UserDefaults.standard
+        //priceという値で保存
+        userDefaults.set("0", forKey: "price")
+        //userDefultsへの値の保存を明示的に行う
+        userDefaults.synchronize()
+
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -27,12 +34,17 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        //UserDefaultsの参照
+        let userDefaults = UserDefaults.standard
+        //nameというkeyを指定して保存していた値を取り出す
+        if let value = userDefaults.string(forKey: "price") {
+            //取り出した値をテキストフィールドい入れる
+            priceField.text = value
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 //    var tapNumber:String = "0"
@@ -41,7 +53,14 @@ class ViewController: UIViewController {
         let value = priceField.text! + tapNumber
         if let price = Int(value){
             priceField.text = "\(price)"
+            //UserDefaultsの参照
+            let userDefaults = UserDefaults.standard
+            //priceという値で保存
+            userDefaults.set(priceField.text, forKey: "price")
+            //userDefaultsへの値の保存を明示的に行う
+            userDefaults.synchronize()
         }
+
     }
 
     @IBAction func tap0Button(_ sender: Any) {
